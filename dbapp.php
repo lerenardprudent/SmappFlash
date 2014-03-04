@@ -19,10 +19,10 @@
 	if($pvarx != "")
 	{
 		$database = "zepsom_saut";
-		$username="zepsom_trksft";
+		$username="root"; //"zepsom_trksft";
 		$password = "tr3ks0ft";
 		
-		@mysql_connect($localhost, $username, $password) or die ("-er-sql-" . mysql_error());
+		@mysql_connect($localhost, $username/*, $password*/) or die ("-er-sql-" . mysql_error());
 		@mysql_query("SET NAMES 'utf8'");
 		@mysql_select_db($database) or die ("-er-sql-" . mysql_error());
 		
@@ -60,7 +60,7 @@
 					$retvar = "-lay-l-ok-";
 					while ($row = mysql_fetch_array($result))
 					{
-						$retvar .= $row[layouts];			//. "~" .$row[filenr].
+						$retvar .= $row['layouts'];			//. "~" .$row['filenr'].
 					}
 				}
 			}	
@@ -97,7 +97,7 @@
 					$retvar = "-win-l-ok-";
 					while ($row = mysql_fetch_array($result))
 					{
-						$retvar .= $row[wins];
+						$retvar .= $row['wins'];
 					}
 				}
 			}	

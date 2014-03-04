@@ -33,7 +33,7 @@
 			{
 				while ($row = mysql_fetch_array($result))
 				{
-					$retv = "-ok-fn100-" .$row[id]. "¦" .$row[fname]. "¦" .$row[lname]. "¦" .$row[type]. "¦" .$row[idusr]. "¦" .$row[cust6]. "¦" .$row[cust7];
+					$retv = "-ok-fn100-" .$row['id']. "¦" .$row['fname']. "¦" .$row['lname']. "¦" .$row['type']. "¦" .$row['idusr']. "¦" .$row['cust6']. "¦" .$row['cust7'];
 				}
 			}
 			else
@@ -66,7 +66,7 @@
 			{
 				while ($row = mysql_fetch_array($result))
 				{
-					$retv = "-ok-fn101-" .$row[id]. "¦" .$row[idusr]. "¦" .$row[idusraux]. "¦" .$row[fname]. "¦" .$row[lname]. "¦" .$row[phase]. "¦" .$row[step]. "¦" .$row[status];
+					$retv = "-ok-fn101-" .$row['id']. "¦" .$row['idusr']. "¦" .$row['idusraux']. "¦" .$row['fname']. "¦" .$row['lname']. "¦" .$row['phase']. "¦" .$row['step']. "¦" .$row['status'];
 				}
 			}
 			else
@@ -101,7 +101,7 @@
 			$retv = "-ok-fn102-" . $trows;
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. "|" .$row[id]. "¦" .$row[xgroup]. "¦" .$row[fname]. "¦" .$row[lname]. "¦" .$row[idusr]. "¦" .$row[idusraux]. "¦" .$row[type]. "¦" .$row[phase]. "¦" .$row[step]. "¦" .$row[status]. "¦" .$row[hzone1]. "¦" .$row[hzone2]. "¦" .$row[hzone3]. "¦" .$row[cust6]. "¦" .$row[cust7];
+				$retv = $retv. "|" .$row['id']. "¦" .$row['xgroup']. "¦" .$row['fname']. "¦" .$row['lname']. "¦" .$row['idusr']. "¦" .$row['idusraux']. "¦" .$row['type']. "¦" .$row['phase']. "¦" .$row['step']. "¦" .$row['status']. "¦" .$row['hzone1']. "¦" .$row['hzone2']. "¦" .$row['hzone3']. "¦" .$row['cust6']. "¦" .$row['cust7'];
 			}
 		}
 		else
@@ -319,7 +319,7 @@
 			$retv = "-ok-fn103-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[id]. "¦" .$row[fname]. "¦" .$row[lname]. "¦" .$row[idusr]. "¦" .$row[idusraux]. "¦" .$row[alias]. "¦" .$row[pword]. "¦" .$row[type]. "¦" .$row[status]. "¦" .$row[lang]. "¦" .$row[birth]. "¦" .$row[sex]. "¦" .$row[matrim]. "¦" .$row[educ]. "¦" .$row[prof]. "¦" .$row[profcode]. "¦" .$row[rev]. "¦" .$row[revcode]. "¦" .$row[hphone]. "¦" .$row[hfax]. "¦" .$row[cphone]. "¦" .$row[haval1f]. "¦" .$row[haval1t]. "¦" .$row[haval2f]. "¦" .$row[haval2t]. "¦" .$row[haval3f]. "¦" .$row[haval3t]. "¦" .$row[hemail]. "¦" .$row[haddress]. "¦" .$row[haddressx]. "¦" .$row[hcity]. "¦" .$row[hstate]. "¦" .$row[hcountry]. "¦" .$row[hpostal]. "¦" .$row[hdate]. "¦" .$row[hlat]. "¦" .$row[hlng]. "¦" .$row[hzone1]. "¦" .$row[hzone2]. "¦"  .$row[hzone3]. "¦" .$row[workplace]. "¦" .$row[wposition]. "¦" .$row[wdate]. "¦" .$row[wphone]. "¦" .$row[wfax]. "¦" .$row[waval1f]. "¦" .$row[waval1t]. "¦" .$row[wemail]. "¦" .$row[waddress]. "¦" .$row[waddressx]. "¦" .$row[wcity]. "¦" .$row[wstate]. "¦" .$row[wcountry]. "¦" .$row[wpostal]. "¦" .$row[wlat]. "¦" .$row[wlng]. "¦" .$row[wzone1]. "¦" .$row[wzone2].  "¦" .$row[wzone3]. "¦" .$row[social]. "¦" .$row[xcontact1]. "¦" .$row[xcontact2]. "¦" .$row[xcontact3]. "¦" .$row[cust1]. "¦" .$row[cust2]. "¦" .$row[cust3]. "¦" .$row[cust4]. "¦" .$row[cust5]. "¦" .$row[cust6]. "¦" .$row[cust7]. "¦" .$row[cust8]. "¦" .$row[cust9]. "¦" .$row[checklist]. "¦" .$row[phase]. "¦" .$row[step]. "¦" .$row[xgroup]. "¦" .$row[dateedit]. "¦" .$row[comments];
+				$retv = $retv. $row['id']. "¦" .$row['fname']. "¦" .$row['lname']. "¦" .$row['idusr']. "¦" .$row['idusraux']. "¦" .$row['alias']. "¦" .$row['pword']. "¦" .$row['type']. "¦" .$row['status']. "¦" .$row['lang']. "¦" .$row['birth']. "¦" .$row['sex']. "¦" .$row['matrim']. "¦" .$row['educ']. "¦" .$row['prof']. "¦" .$row['profcode']. "¦" .$row['rev']. "¦" .$row['revcode']. "¦" .$row['hphone']. "¦" .$row['hfax']. "¦" .$row['cphone']. "¦" .$row['haval1f']. "¦" .$row['haval1t']. "¦" .$row['haval2f']. "¦" .$row['haval2t']. "¦" .$row['haval3f']. "¦" .$row['haval3t']. "¦" .$row['hemail']. "¦" .$row['haddress']. "¦" .$row['haddressx']. "¦" .$row['hcity']. "¦" .$row['hstate']. "¦" .$row['hcountry']. "¦" .$row['hpostal']. "¦" .$row['hdate']. "¦" .$row['hlat']. "¦" .$row['hlng']. "¦" .$row['hzone1']. "¦" .$row['hzone2']. "¦"  .$row['hzone3']. "¦" .$row['workplace']. "¦" .$row['wposition']. "¦" .$row['wdate']. "¦" .$row['wphone']. "¦" .$row['wfax']. "¦" .$row['waval1f']. "¦" .$row['waval1t']. "¦" .$row['wemail']. "¦" .$row['waddress']. "¦" .$row['waddressx']. "¦" .$row['wcity']. "¦" .$row['wstate']. "¦" .$row['wcountry']. "¦" .$row['wpostal']. "¦" .$row['wlat']. "¦" .$row['wlng']. "¦" .$row['wzone1']. "¦" .$row['wzone2'].  "¦" .$row['wzone3']. "¦" .$row['social']. "¦" .$row['xcontact1']. "¦" .$row['xcontact2']. "¦" .$row['xcontact3']. "¦" .$row['cust1']. "¦" .$row['cust2']. "¦" .$row['cust3']. "¦" .$row['cust4']. "¦" .$row['cust5']. "¦" .$row['cust6']. "¦" .$row['cust7']. "¦" .$row['cust8']. "¦" .$row['cust9']. "¦" .$row['checklist']. "¦" .$row['phase']. "¦" .$row['step']. "¦" .$row['xgroup']. "¦" .$row['dateedit']. "¦" .$row['comments'];
 			}
 		}
 		else
@@ -350,9 +350,9 @@
 			{
 				while ($row = mysql_fetch_array($resultc))
 				{
-					$z1 = $row[zone1];
-					$z2 = $row[zone2];
-					$z3 = $row[zone3];
+					$z1 = $row['zone1'];
+					$z2 = $row['zone2'];
+					$z3 = $row['zone3'];
 				}
 			}
 		}
@@ -365,9 +365,9 @@
 			{
 				while ($row = mysql_fetch_array($resultc))
 				{
-					$z4 = $row[zone1];
-					$z5 = $row[zone2];
-					$z6 = $row[zone3];
+					$z4 = $row['zone1'];
+					$z5 = $row['zone2'];
+					$z6 = $row['zone3'];
 				}
 			}
 		}
@@ -508,7 +508,7 @@
 			$retv = "-ok-fn110-" . $trows;
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. "|" .$row[id]. "¦" .$row[idusr]. "¦" .$row[fname]. "¦" .$row[lname]. "¦" .$row[hphone]. "¦" .$row[xgroup]. "¦" .$row[cust6]. "¦" .$row[cust7];
+				$retv = $retv. "|" .$row['id']. "¦" .$row['idusr']. "¦" .$row['fname']. "¦" .$row['lname']. "¦" .$row['hphone']. "¦" .$row['xgroup']. "¦" .$row['cust6']. "¦" .$row['cust7'];
 			}
 		}
 		else
@@ -532,8 +532,8 @@
 			$retv = "-ok-fn111-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. "|" .$row[nameusr]. "¦" .$row[idusr]. "¦" .$row[pphase];
-				$a = $a . $row[idusr] . " ";
+				$retv = $retv. "|" .$row['nameusr']. "¦" .$row['idusr']. "¦" .$row['pphase'];
+				$a = $a . $row['idusr'] . " ";
 			}
 			if ($a == " ") { $a = ""; }
 			$querySQL = "update " .$userstbl. " set cust8='" .$a. "' where id='" .$par[1]. "'";
@@ -579,7 +579,7 @@
 			{
 				while ($row = mysql_fetch_array($result))
 				{
-					$retv = $retv. "|" .$row[idusr];
+					$retv = $retv. "|" .$row['idusr'];
 				}
 			}
 		}
@@ -607,12 +607,12 @@
 		{
 			while ($row = mysql_fetch_array($result))
 			{
-				$pid = $row[id];
-				$pidusr = $row[idusr];
-				$pname = $row[fname]. " " .$row[lname];
-				$ptype = $row[type];
-				$pxgroup = $row[xgroup];
-				$a = trim($row[cust8]);
+				$pid = $row['id'];
+				$pidusr = $row['idusr'];
+				$pname = $row['fname']. " " .$row['lname'];
+				$ptype = $row['type'];
+				$pxgroup = $row['xgroup'];
+				$a = trim($row['cust8']);
 				$f = $par[3]. "_" .$par[11];
 				$querySQLx = "insert into activity set id='NULL', idu='" .$par[2]. "', idp='" .$pid. "', idusr='" .$par[3]. "', idparti='" .$pidusr. "', nameusr='" .$par[4]. "', nameparti='" .$pname. "', activity='" .$par[5]. "', status='" .$par[6]. "', mode='SYS', code='" .$par[7]. "', ptype='" .$ptype. "', pxgroup='" .$pxgroup. "', pphase='" .$par[11]. "', pstep='" .$par[12]. "', pstatus='" .$par[13]. "', description='" .$par[10]. "', dstart='" .$par[8]. "', dend='" .$par[9]. "', cust7='" .$par[14]. "', cust8='" .$par[15]. "', location='Résidence'";
 				$resultx = @mysql_query($querySQLx);		// or die ("-er-sql-" . mysql_error());
@@ -658,12 +658,12 @@
 		{
 			while ($row = mysql_fetch_array($result))
 			{
-				$pid = $row[id];
-				$pidusr = $row[idusr];
-				$pname = $row[fname]. " " .$row[lname];
-				$ptype = $row[type];
-				$pxgroup = $row[xgroup];
-				$a = trim($row[cust8]);
+				$pid = $row['id'];
+				$pidusr = $row['idusr'];
+				$pname = $row['fname']. " " .$row['lname'];
+				$ptype = $row['type'];
+				$pxgroup = $row['xgroup'];
+				$a = trim($row['cust8']);
 				$f = $par[3]. "_" .$par[11];
 
 				$querySQLx = "insert into activity set id='NULL', idu='" .$par[2]. "', idp='" .$pid. "', idusr='" .$par[3]. "', idparti='" .$pidusr. "', nameusr='" .$par[4]. "', nameparti='" .$pname. "', activity='" .$par[5]. "', status='" .$par[6]. "', mode='SYS', code='" .$par[7]. "', ptype='" .$ptype. "', pxgroup='" .$pxgroup. "', pphase='" .$par[11]. "', pstep='" .$par[12]. "', pstatus='" .$par[13]. "', description='" .$par[10]. "', dstart='" .$par[8]. "', dend='" .$par[9]. "', cust7='" .$par[14]. "', cust8='" .$par[15]. "'";			//date("Y-m-d", $td)
@@ -704,9 +704,9 @@
 		{
 			while ($row = mysql_fetch_array($result))
 			{
-				$pid = $row[id];
-				$pidusr = $row[idusr];
-				$a = trim($row[cust8]);
+				$pid = $row['id'];
+				$pidusr = $row['idusr'];
+				$a = trim($row['cust8']);
 				$f = $par[8]. "_" .$par[3];
 				if (strrpos($a, $f) === FALSE)
 				{
@@ -769,7 +769,7 @@
 				$retv = "-ok-fn130-";
 				while ($row = mysql_fetch_array($result))
 				{
-					$retv = $retv. "|" .$row[location]. "¦" .$row[cust0]. "¦" .$row[cust1]. "¦" .$row[cust3]. "¦" .$row[cust4]. "¦" .$row[cust7]. "¦" .$row[cust8];
+					$retv = $retv. "|" .$row['location']. "¦" .$row['cust0']. "¦" .$row['cust1']. "¦" .$row['cust3']. "¦" .$row['cust4']. "¦" .$row['cust7']. "¦" .$row['cust8'];
 				}
 			}
 			else
@@ -806,9 +806,9 @@
 			{
 				while ($row = mysql_fetch_array($resultc))
 				{
-					$z1 = $row[zone1];
-					$z2 = $row[zone2];
-					$z3 = $row[zone3];
+					$z1 = $row['zone1'];
+					$z2 = $row['zone2'];
+					$z3 = $row['zone3'];
 				}
 			}
 		}
@@ -952,7 +952,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[xgroup]. "\t" .$row[fname]. "\t" .$row[lname]. "\t" .$row[idusr]. "\t" .$row[idusraux]. "\t" .$row[type]. "\t" .$row[phase]. "\t" .$row[step]. "\t" .$row[status]. "\t" .$row[hzone1]. "\t" .$row[hzone2]. "\t" .$row[hzone3]. "\n";
+			$strdata = $row['id']. "\t" .$row['xgroup']. "\t" .$row['fname']. "\t" .$row['lname']. "\t" .$row['idusr']. "\t" .$row['idusraux']. "\t" .$row['type']. "\t" .$row['phase']. "\t" .$row['step']. "\t" .$row['status']. "\t" .$row['hzone1']. "\t" .$row['hzone2']. "\t" .$row['hzone3']. "\n";
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -966,7 +966,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[xgroup]. "\t" .$row[fname]. "\t" .$row[lname]. "\t" .$row[idusr]. "\t" .$row[idusraux]. "\t" .$row[type]. "\t" .$row[phase]. "\t" .$row[step]. "\t" .$row[status]. "\t" .$row[hzone1]. "\t" .$row[hzone2]. "\t" .$row[hzone3]. "\n";
+			$strdata = $row['id']. "\t" .$row['xgroup']. "\t" .$row['fname']. "\t" .$row['lname']. "\t" .$row['idusr']. "\t" .$row['idusraux']. "\t" .$row['type']. "\t" .$row['phase']. "\t" .$row['step']. "\t" .$row['status']. "\t" .$row['hzone1']. "\t" .$row['hzone2']. "\t" .$row['hzone3']. "\n";
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -980,7 +980,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[xgroup]. "\t" .$row[fname]. "\t" .$row[lname]. "\t" .$row[idusr]. "\t" .$row[idusraux]. "\t" .$row[type]. "\n";
+			$strdata = $row['id']. "\t" .$row['xgroup']. "\t" .$row['fname']. "\t" .$row['lname']. "\t" .$row['idusr']. "\t" .$row['idusraux']. "\t" .$row['type']. "\n";
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -1129,7 +1129,7 @@
 				fwrite($fh, $strdata);
 			}
 			//5,5,14,14,9,10,7,7,7,6,5,6,5
-			$strdata = "<tr><td width='5%'>" .$row[id]. "</td><td width='5%'>" .$row[xgroup]. "</td><td width='14%'>" .$row[fname]. "</td><td width='14%'>" .$row[lname]. "</td><td width='9%'>" .$row[idusr]. "</td><td width='10%'>" .$row[idusraux]. "</td><td width='7%'>" .$row[type]. "</td><td width='7%'>" .$row[phase]. "</td><td width='7%'>" .$row[step]. "</td><td width='6%'>" .$row[status]. "</td><td width='5%'>" .$row[hzone1]. "</td><td width='6%'>" .$row[hzone2]. "</td><td width='5%'>" .$row[hzone3]. "</td></tr>";
+			$strdata = "<tr><td width='5%'>" .$row['id']. "</td><td width='5%'>" .$row['xgroup']. "</td><td width='14%'>" .$row['fname']. "</td><td width='14%'>" .$row['lname']. "</td><td width='9%'>" .$row['idusr']. "</td><td width='10%'>" .$row['idusraux']. "</td><td width='7%'>" .$row['type']. "</td><td width='7%'>" .$row['phase']. "</td><td width='7%'>" .$row['step']. "</td><td width='6%'>" .$row['status']. "</td><td width='5%'>" .$row['hzone1']. "</td><td width='6%'>" .$row['hzone2']. "</td><td width='5%'>" .$row['hzone3']. "</td></tr>";
 			fwrite($fh, $strdata);
 			$i = $i + 1;
 			if ($i == 32)
@@ -1157,9 +1157,9 @@
 			fwrite($fh, $strdata);
 			$strdata = "<div class='title' style=' width:1000px; font-size:20px; color:#cc0000;'>Attribution des visites à domicile&nbsp;&nbsp;-&nbsp;&nbsp;" .$i. "<br/><span style='font-size:12px;'>" .date("Y-m-d", $td). "</span></div><br/>";
 			fwrite($fh, $strdata);
-			$strdata = "<div style='width:1000px; border-style:solid; border-width:1px; border-color:#ff0000; padding:10px;'>ID participant potentiel : <b>" .$row[idusr]. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cohorte : <b>" .$row[xgroup]. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phase : <b>" .$row[phase]. "</b></div><br>";
+			$strdata = "<div style='width:1000px; border-style:solid; border-width:1px; border-color:#ff0000; padding:10px;'>ID participant potentiel : <b>" .$row['idusr']. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cohorte : <b>" .$row['xgroup']. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phase : <b>" .$row['phase']. "</b></div><br>";
 			fwrite($fh, $strdata);
-			$strdata = "<div style='width:1000px; border-style:solid; border-width:1px; border-color:#ff0000; padding:10px;'>Adresse initiale (A00) : <b>" .$row[haddress]. " " .$row[haddressx]. ", " .$row[hcity]. " " .$row[hpostal]. "</b><br/>Quartier : <b>" .$row[hzone1]. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secteur recensement : <b>" .$row[hzone2]. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aire de diffusion : <b>" .$row[hzone3]. "</b></div><br/>";
+			$strdata = "<div style='width:1000px; border-style:solid; border-width:1px; border-color:#ff0000; padding:10px;'>Adresse initiale (A00) : <b>" .$row['haddress']. " " .$row['haddressx']. ", " .$row['hcity']. " " .$row['hpostal']. "</b><br/>Quartier : <b>" .$row['hzone1']. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secteur recensement : <b>" .$row['hzone2']. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aire de diffusion : <b>" .$row['hzone3']. "</b></div><br/>";
 			fwrite($fh, $strdata);
 			$strdata = "<table style='border-width:0px'><tr><td align='center'><div class='addr'><b>A06</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A05</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A04</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A00</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A01</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A02</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td><td align='center'><div class='addr'><b>A03</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visité<br/><br/><b>1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6</b></div></td></tr></table><br/>";
 			fwrite($fh, $strdata);
@@ -1200,21 +1200,21 @@
 				$strdata = "<br/><br/><table>";
 				fwrite($fh, $strdata);
 			}
-			$strdata = "<tr><td colspan='9' style='border-style:none;'><span style='color:#ff0000'>&nbsp;<br/>Participant&nbsp;:&nbsp;<b>" .$row[fname]. "&nbsp;" .$row[lname]. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;prévue&nbsp;: <b>" .$row[cust2]. "</b></span></td></tr>";
+			$strdata = "<tr><td colspan='9' style='border-style:none;'><span style='color:#ff0000'>&nbsp;<br/>Participant&nbsp;:&nbsp;<b>" .$row['fname']. "&nbsp;" .$row['lname']. "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;prévue&nbsp;: <b>" .$row['cust2']. "</b></span></td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td>" .$row[xgroup]. "</td><td>" .$row[idusr]. "</td><td>" .$row[type]. "</td><td>" .$row[phase]. "</td><td>" .$row[step]. "</td><td>" .$row[status]. "</td><td>" .$row[hzone1]. "</td><td>" .$row[hzone2]. "</td><td>" .$row[hzone3]. "</td></tr>";
+			$strdata = "<tr><td>" .$row['xgroup']. "</td><td>" .$row['idusr']. "</td><td>" .$row['type']. "</td><td>" .$row['phase']. "</td><td>" .$row['step']. "</td><td>" .$row['status']. "</td><td>" .$row['hzone1']. "</td><td>" .$row['hzone2']. "</td><td>" .$row['hzone3']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='9'>" .$row[haddress]. " " .$row[haddressx]. ", " .$row[hcity]. ", " .$row[hstate]. ", " .$row[hpostal]. "</td></tr>";
+			$strdata = "<tr><td colspan='9'>" .$row['haddress']. " " .$row['haddressx']. ", " .$row['hcity']. ", " .$row['hstate']. ", " .$row['hpostal']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='3'>" .$row[hphone]. "&nbsp;</td><td colspan='3'>" .$row[cphone]. "&nbsp;<td colspan='3'>" .$row[hemail]. "&nbsp;</td></tr>";
+			$strdata = "<tr><td colspan='3'>" .$row['hphone']. "&nbsp;</td><td colspan='3'>" .$row['cphone']. "&nbsp;<td colspan='3'>" .$row['hemail']. "&nbsp;</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='9'>Contact 1 : " .$row[xcontact1]. "</td></tr>";
+			$strdata = "<tr><td colspan='9'>Contact 1 : " .$row['xcontact1']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='9'>Contact 2 : " .$row[xcontact2]. "</td></tr>";
+			$strdata = "<tr><td colspan='9'>Contact 2 : " .$row['xcontact2']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='9'>Contact 3 : " .$row[xcontact3]. "</td></tr>";
+			$strdata = "<tr><td colspan='9'>Contact 3 : " .$row['xcontact3']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$strdata = "<tr><td colspan='5'>" .$row[comments]. "</td><td colspan='4'>Commentaires : <br/>&nbsp;<br/>&nbsp;</td></tr>";
+			$strdata = "<tr><td colspan='5'>" .$row['comments']. "</td><td colspan='4'>Commentaires : <br/>&nbsp;<br/>&nbsp;</td></tr>";
 			fwrite($fh, $strdata);
 			$strdata = "<tr><td colspan='9'>Documents signés :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>RECH</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>RAMQ</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>AREC</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SDIAG</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>AUT</b> :</td></tr>";
 			fwrite($fh, $strdata);
@@ -1254,7 +1254,7 @@
 				$strdata = "<br/><br/><table><tr><td style='color:#ff0000'>ID&nbsp;PARTI.</td><td style='color:#ff0000'>ADRESSE</td><td style='color:#ff0000'>A0</td><td style='color:#ff0000'>A1</td><td style='color:#ff0000'>A2</td><td style='color:#ff0000'>A3</td><td style='color:#ff0000'>A4</td><td style='color:#ff0000'>A5</td><td style='color:#ff0000'>A6</td><td style='color:#ff0000'>A7</td><td style='color:#ff0000'>A8</td><td style='color:#ff0000'>A9</td><td style='color:#ff0000'>A10</td><td style='color:#ff0000'>A11</td><td style='color:#ff0000'>A12</td><td style='color:#ff0000'>A13</td><td style='color:#ff0000'>QUART.</td><td style='color:#ff0000'>S/D</td><td style='color:#ff0000'>A/R</td></tr>";
 				fwrite($fh, $strdata);
 			}
-			$querySQL = "select * from addressvis where idu='" .$row[id]. "'";
+			$querySQL = "select * from addressvis where idu='" .$row['id']. "'";
 			$resultx = @mysql_query($querySQL);		// or die ("-er-sql-" . mysql_error());
 			if ($resultx)
 			{
@@ -1309,7 +1309,7 @@
 				$strdata = " <tr>";
 				fwrite($fh, $strdata); 
 			}
-			$strdata = "<td><div><b>" .trim($row[fname]). " " .trim($row[lname]). "</b><br/>" .trim($row[haddress]). "<br/>" .trim($row[hcity]). ", " .trim($row[hstate]). "<br/>" .$row[hpostal]. "</div></td>";
+			$strdata = "<td><div><b>" .trim($row['fname']). " " .trim($row['lname']). "</b><br/>" .trim($row['haddress']). "<br/>" .trim($row['hcity']). ", " .trim($row['hstate']). "<br/>" .$row['hpostal']. "</div></td>";
 			fwrite($fh, $strdata);
 			
 			if ($i%3 == 2 || $i == $trows)
@@ -1336,7 +1336,7 @@
 		$itw = array();
 		while ($row = mysql_fetch_array($res))
 		{
-			array_push( $itw, array($row[idusr], $row[fname], $row[lname]) ); 
+			array_push( $itw, array($row['idusr'], $row['fname'], $row['lname']) ); 
 		}
 		
 		$fh = fopen($fi, 'w');	 //or die("can't open file");
@@ -1408,12 +1408,12 @@
 			$retv = "-ok-fn170-" . $trows;
 			while ($row = mysql_fetch_array($result))
 			{
-				$add = $row[address];
-				if ($row[addressx] != "") { $add = $add . ", " . $row[addressx]; }
-				if ($row[city] != "") { $add = $add . ", " . $row[city]; }
-				if ($row[state] != "") { $add = $add . ", " . $row[state]; }
-				if ($row[country] != "") { $add = $add . ", " . $row[country]; }
-				$retv = $retv. "|" .$row[id]. "¦" .$row[idu]. "¦" .$row[type]. "¦" .$row[dateedit]. "¦"  .$row[date]. "¦" .$add. "¦" .$row[postal];
+				$add = $row['address'];
+				if ($row['addressx'] != "") { $add = $add . ", " . $row['addressx']; }
+				if ($row['city'] != "") { $add = $add . ", " . $row['city']; }
+				if ($row['state'] != "") { $add = $add . ", " . $row['state']; }
+				if ($row['country'] != "") { $add = $add . ", " . $row['country']; }
+				$retv = $retv. "|" .$row['id']. "¦" .$row['idu']. "¦" .$row['type']. "¦" .$row['dateedit']. "¦"  .$row['date']. "¦" .$add. "¦" .$row['postal'];
 			}
 		}
 		else
@@ -1447,10 +1447,10 @@
 		{
 			while ($row = mysql_fetch_array($result))
 			{
-				$uid = $row[id];
-				$usrid = $row[idusr];
-				$ufname = $row[fname];
-				$ulname = $row[lname];
+				$uid = $row['id'];
+				$usrid = $row['idusr'];
+				$ufname = $row['fname'];
+				$ulname = $row['lname'];
 			}
 			$uname = $ufname . " " . $ulname;
 			$querySQLx = "update users set cust8 = concat('" .$par[2]. "', substring(cust8,7)) where cust8 like '" .$par[1]. "%' and phase = 'T-04' and type = 'PAR' and (status = 'ACT' or status = 'ARE')";
@@ -1633,7 +1633,7 @@
 			$a = "";
 			while ($row = mysql_fetch_array($result))
 			{
-				$a = "|" .$row[a6]. "|" .$row[a5]. "|" .$row[a4]. "|" .$row[a0]. "|" .$row[a1]. "|" .$row[a2]. "|" .$row[a3]. "|" .$row[a7]. "|" .$row[a8]. "|" .$row[a9]. "|" .$row[a10]. "|" .$row[a11]. "|" .$row[a12]. "|" .$row[a13]. "|" .$row[address]. "|" .$row[lat]. "|" .$row[lng]. "|" .$row[zone1]. "|" .$row[zone2]. "|" .$row[zone3];
+				$a = "|" .$row['a6']. "|" .$row['a5']. "|" .$row['a4']. "|" .$row['a0']. "|" .$row['a1']. "|" .$row['a2']. "|" .$row['a3']. "|" .$row['a7']. "|" .$row['a8']. "|" .$row['a9']. "|" .$row['a10']. "|" .$row['a11']. "|" .$row['a12']. "|" .$row['a13']. "|" .$row['address']. "|" .$row['lat']. "|" .$row['lng']. "|" .$row['zone1']. "|" .$row['zone2']. "|" .$row['zone3'];
 			}
 			$retv = "-ok-fn181-" . $a;
 		}
@@ -1657,7 +1657,7 @@
 			$retv = "-ok-fn182-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[id]. "¦" .$row[idu]."¦" .$row[address]."¦" .$row[addressx]. "¦" .$row[city]. "¦"  .$row[state]. "¦" .$row[country]. "¦" .$row[postal];
+				$retv = $retv. $row['id']. "¦" .$row['idu']."¦" .$row['address']."¦" .$row['addressx']. "¦" .$row['city']. "¦"  .$row['state']. "¦" .$row['country']. "¦" .$row['postal'];
 			}
 		}
 		else
@@ -1724,7 +1724,7 @@
 			$retv = "-ok-fn202-" . $trows;
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. "|" .$row[id]. "¦" .$row[activity]. "¦" .$row[status]. "¦" .$row[mode]. "¦" .$row[code]. "¦" .$row[description]. "¦" .$row[dstart]. "¦" .$row[dend]. "¦" .$row[idu]. "¦" .$row[idusr]. "¦" .$row[nameusr]. "¦" .$row[idp]. "¦" .$row[idparti]. "¦" .$row[nameparti]. "¦" .$row[ptype]. "¦" .$row[pphase]. "¦" .$row[pstep]. "¦" .$row[pstatus]. "¦" .$row[pxgroup]. "¦" .$row[cust7]. "¦" .$row[cust8];
+				$retv = $retv. "|" .$row['id']. "¦" .$row['activity']. "¦" .$row['status']. "¦" .$row['mode']. "¦" .$row['code']. "¦" .$row['description']. "¦" .$row['dstart']. "¦" .$row['dend']. "¦" .$row['idu']. "¦" .$row['idusr']. "¦" .$row['nameusr']. "¦" .$row['idp']. "¦" .$row['idparti']. "¦" .$row['nameparti']. "¦" .$row['ptype']. "¦" .$row['pphase']. "¦" .$row['pstep']. "¦" .$row['pstatus']. "¦" .$row['pxgroup']. "¦" .$row['cust7']. "¦" .$row['cust8'];
 			}
 		}
 		else
@@ -1902,7 +1902,7 @@
 			$retv = "-ok-fn203-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[id]. "¦" .$row[idu]."¦" .$row[idp]."¦" .$row[idusr]. "¦" .$row[idparti]. "¦"  .$row[nameusr]. "¦" .$row[nameparti]. "¦"  .$row[activity]. "¦"  .$row[status]. "¦" .$row[mode]. "¦" .$row[code]. "¦" .$row[ptype]. "¦" .$row[pphase]. "¦" .$row[pstep]. "¦" .$row[pstatus]. "¦" .$row[description]. "¦" .$row[dstart]. "¦" .$row[tstart]. "¦" .$row[dend]. "¦" .$row[tend]. "¦" .$row[location]. "¦" .$row[cust0]. "¦" .$row[cust1]. "¦" .$row[cust2]. "¦" .$row[cust3]. "¦" .$row[cust4]. "¦" .$row[cust5]. "¦" .$row[cust6]. "¦" .$row[cust7]. "¦" .$row[cust8]. "¦" .$row[pxgroup]. "¦" .$row[comments];
+				$retv = $retv. $row['id']. "¦" .$row['idu']."¦" .$row['idp']."¦" .$row['idusr']. "¦" .$row['idparti']. "¦"  .$row['nameusr']. "¦" .$row['nameparti']. "¦"  .$row['activity']. "¦"  .$row['status']. "¦" .$row['mode']. "¦" .$row['code']. "¦" .$row['ptype']. "¦" .$row['pphase']. "¦" .$row['pstep']. "¦" .$row['pstatus']. "¦" .$row['description']. "¦" .$row['dstart']. "¦" .$row['tstart']. "¦" .$row['dend']. "¦" .$row['tend']. "¦" .$row['location']. "¦" .$row['cust0']. "¦" .$row['cust1']. "¦" .$row['cust2']. "¦" .$row['cust3']. "¦" .$row['cust4']. "¦" .$row['cust5']. "¦" .$row['cust6']. "¦" .$row['cust7']. "¦" .$row['cust8']. "¦" .$row['pxgroup']. "¦" .$row['comments'];
 			}
 		}
 		else
@@ -2103,7 +2103,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[activity]. "\t" .$row[status]. "\t" .$row[code]. "\t" .$row[idusr]. "\t" .$row[nameusr]. "\t" .$row[idparti]. "\t" .$row[nameparti]. "\t" .$row[ptype]. "\t" .$row[pxgroup]. "\t" .$row[pphase]. "\t" .$row[pstep]. "\t" .$row[pstatus]. "\t" .$row[dstart]. "\t" .$row[dend]. "\n"; 
+			$strdata = $row['id']. "\t" .$row['activity']. "\t" .$row['status']. "\t" .$row['code']. "\t" .$row['idusr']. "\t" .$row['nameusr']. "\t" .$row['idparti']. "\t" .$row['nameparti']. "\t" .$row['ptype']. "\t" .$row['pxgroup']. "\t" .$row['pphase']. "\t" .$row['pstep']. "\t" .$row['pstatus']. "\t" .$row['dstart']. "\t" .$row['dend']. "\n"; 
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -2117,7 +2117,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[idusr]. "\t" .$row[nameusr]. "\t" .$row[idparti]. "\t" .$row[nameparti]. "\t" .$row[pphase]. "\t" .$row[dstart]. "\t" .$row[dend]. "\t" .$row[cust0]. "\t" .$row[cust1]. "\t" .$row[cust2]. "\n"; 
+			$strdata = $row['id']. "\t" .$row['idusr']. "\t" .$row['nameusr']. "\t" .$row['idparti']. "\t" .$row['nameparti']. "\t" .$row['pphase']. "\t" .$row['dstart']. "\t" .$row['dend']. "\t" .$row['cust0']. "\t" .$row['cust1']. "\t" .$row['cust2']. "\n"; 
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -2131,7 +2131,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[idusr]. "\t" .$row[nameusr]. "\t" .$row[total]. "\n"; 
+			$strdata = $row['idusr']. "\t" .$row['nameusr']. "\t" .$row['total']. "\n"; 
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -2145,7 +2145,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[id]. "\t" .$row[idusr]. "\t" .$row[nameusr]. "\t" .$row[idparti]. "\t" .$row[nameparti]. "\t" .$row[pphase]. "\t" .$row[dstart]. "\t" .$row[dend]. "\t" .$row[cust3]. "\t" .$row[cust4]. "\t" .$row[cust5]. "\n"; 
+			$strdata = $row['id']. "\t" .$row['idusr']. "\t" .$row['nameusr']. "\t" .$row['idparti']. "\t" .$row['nameparti']. "\t" .$row['pphase']. "\t" .$row['dstart']. "\t" .$row['dend']. "\t" .$row['cust3']. "\t" .$row['cust4']. "\t" .$row['cust5']. "\n"; 
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -2159,7 +2159,7 @@
 		fwrite($fh, $strdata);
 		while ($row = mysql_fetch_array($res))
 		{
-			$strdata = $row[idusr]. "\t" .$row[nameusr]. "\t" .$row[total]. "\n"; 
+			$strdata = $row['idusr']. "\t" .$row['nameusr']. "\t" .$row['total']. "\n"; 
 			fwrite($fh, $strdata);
 		}
 		fclose($fh);
@@ -2309,7 +2309,7 @@
 				$strdata = "<br/><br/><table><tr><td class='red'>#</td><td class='red'>Activité</td><td class='red'>État</td><td class='red'>Code</td><td class='red'>ID Resp.</td><td class='red'>Nom&nbsp;responsable</td><td class='red'>ID Parti.</td><td class='red'>Nom&nbsp;participant</td><td class='red'>Type</td><td class='red'>Coho.</td><td class='red'>Temps</td><td class='red'>Étape</td><td class='red'>Statut</td><td class='red'>Date&nbsp;debut&nbsp;&nbsp;</td><td class='red'>Date&nbsp;fin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>";
 				fwrite($fh, $strdata);
 			}
-			$strdata = "<tr><td>" .$row[id]. "</td><td>" .$row[activity]. "</td><td>" .$row[status]. "</td><td>" .$row[code]. "</td><td>" .$row[idusr]. "</td><td>" .$row[nameusr]. "</td><td>" .$row[idparti]. "</td><td>" .$row[nameparti]. "</td><td>" .$row[ptype]. "</td><td>" .$row[pxgroup]. "</td><td>" .$row[pphase]. "</td><td>" .$row[pstep]. "</td><td>" .$row[pstatus]. "</td><td>" .$row[dstart]. "</td><td>" .$row[dend]. "</td></tr>";
+			$strdata = "<tr><td>" .$row['id']. "</td><td>" .$row['activity']. "</td><td>" .$row['status']. "</td><td>" .$row['code']. "</td><td>" .$row['idusr']. "</td><td>" .$row['nameusr']. "</td><td>" .$row['idparti']. "</td><td>" .$row['nameparti']. "</td><td>" .$row['ptype']. "</td><td>" .$row['pxgroup']. "</td><td>" .$row['pphase']. "</td><td>" .$row['pstep']. "</td><td>" .$row['pstatus']. "</td><td>" .$row['dstart']. "</td><td>" .$row['dend']. "</td></tr>";
 			fwrite($fh, $strdata);
 			$i = $i + 1;
 			if ($i == 20)
@@ -2335,7 +2335,7 @@
 		$totb = 0;
 		while ($row = mysql_fetch_array($res))
 		{
-			if ($idu != $row[idusr])
+			if ($idu != $row['idusr'])
 			{
 				if ($i != 0)
 				{
@@ -2354,7 +2354,7 @@
 				$i += 1;
 				for ($j = 0; $j < count($ua); $j += 1)
 				{
-					if ($ua[$j][0] == $row[idusr])
+					if ($ua[$j][0] == $row['idusr'])
 					{
 						$strdata = "<div class='title'> " .$ua[$j][2]. "&nbsp;&nbsp;&nbsp;&nbsp;ID : " .$ua[$j][0]. "&nbsp;&nbsp;&nbsp;&nbsp;N° employé : " .$ua[$j][1]. "</div>";
 						fwrite($fh, $strdata);
@@ -2366,12 +2366,12 @@
 				$strdata = "<br/><table><tr><td class='red'>#</td><td class='red'>ID&nbsp;Parti.</td><td class='red'>Temps</td><td class='red'>Date&nbsp;activ.</td><td class='red' align='right'>Km.</td><td class='red' align='right'>Coût Km.</td><td class='red'>Payé&nbsp;le</td></tr>";
 				fwrite($fh, $strdata);
 			}
-			//$strdata = "<tr><td>" .$row[id]. "</td><td><b>" .$row[cust6]. "</b></td><td><b>" .$row[nameusr]. "</b></td><td>" .$row[idparti]. "</td><td>" .$row[pphase]. "</td><td>" .$row[dend]. "</td><td align='right'><b>" .$row[cust0]. "</b></td><td align='right'><b>$ " .number_format($row[cust1],2). "</b></td><td>" .$row[cust2]. "</td></tr>";
-			$strdata = "<tr><td>" .$row[id]. "</td><td>" .$row[idparti]. "</td><td>" .$row[pphase]. "</td><td>" .$row[dend]. "</td><td align='right'><b>" .$row[cust0]. "</b></td><td align='right'><b>$ " .number_format($row[cust1],2). "</b></td><td>" .$row[cust2]. "</td></tr>";
+			//$strdata = "<tr><td>" .$row['id']. "</td><td><b>" .$row['cust6']. "</b></td><td><b>" .$row['nameusr']. "</b></td><td>" .$row['idparti']. "</td><td>" .$row['pphase']. "</td><td>" .$row['dend']. "</td><td align='right'><b>" .$row['cust0']. "</b></td><td align='right'><b>$ " .number_format($row['cust1'],2). "</b></td><td>" .$row['cust2']. "</td></tr>";
+			$strdata = "<tr><td>" .$row['id']. "</td><td>" .$row['idparti']. "</td><td>" .$row['pphase']. "</td><td>" .$row['dend']. "</td><td align='right'><b>" .$row['cust0']. "</b></td><td align='right'><b>$ " .number_format($row['cust1'],2). "</b></td><td>" .$row['cust2']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$idu = $row[idusr];
-			$tota += $row[cust0];
-			$totb += $row[cust1];
+			$idu = $row['idusr'];
+			$tota += $row['cust0'];
+			$totb += $row['cust1'];
 		}
 		$strdata = "<tr><td colspan='4' align='right'><b>Total</b></td><td align='right'><b>" . $tota. "</b></td><td align='right'><b>$ " . number_format($totb,2) . "</b></td><td></td></tr>";		//total here
 		fwrite($fh, $strdata);
@@ -2394,7 +2394,7 @@
 		$totb = 0;
 		while ($row = mysql_fetch_array($res))
 		{
-			if ($idu != $row[idusr])
+			if ($idu != $row['idusr'])
 			{
 				if ($i != 0)
 				{
@@ -2414,7 +2414,7 @@
 				$i += 1;
 				for ($j = 0; $j < count($ua); $j += 1)
 				{
-					if ($ua[$j][0] == $row[idusr])
+					if ($ua[$j][0] == $row['idusr'])
 					{
 						$strdata = "<div class='title'> " .$ua[$j][2]. "&nbsp;&nbsp;&nbsp;&nbsp;ID : " .$ua[$j][0]. "&nbsp;&nbsp;&nbsp;&nbsp;N° employé : " .$ua[$j][1]. "</div>";
 						fwrite($fh, $strdata);
@@ -2428,12 +2428,12 @@
 				$strdata = "<br/><table><tr><td class='red'>#</td><td class='red'>ID&nbsp;Parti.</td><td class='red'>Temps</td><td class='red'>Date&nbsp;activ.</td><td class='red' align='right'>Temps</td><td class='red'>Payé&nbsp;le</td></tr>";
 				fwrite($fh, $strdata);
 			}
-			//$strdata = "<tr><td>" .$row[id]. "</td><td><b>" .$row[cust6]. "</b></td><td><b>" .$row[nameusr]. "</b></td><td>" .$row[idparti]. "</td><td>" .$row[pphase]. "</td><td>" .$row[dend]. "</td><td align='right'><b>" .number_format($row[cust3],2). "</b></td><td>" .$row[cust5]. "</td></tr>";
-			$strdata = "<tr><td>" .$row[id]. "</td><td>" .$row[idparti]. "</td><td>" .$row[pphase]. "</td><td>" .$row[dend]. "</td><td align='right'><b>" .number_format($row[cust3],2). "</b></td><td>" .$row[cust5]. "</td></tr>";
+			//$strdata = "<tr><td>" .$row['id']. "</td><td><b>" .$row['cust6']. "</b></td><td><b>" .$row['nameusr']. "</b></td><td>" .$row['idparti']. "</td><td>" .$row['pphase']. "</td><td>" .$row['dend']. "</td><td align='right'><b>" .number_format($row['cust3'],2). "</b></td><td>" .$row['cust5']. "</td></tr>";
+			$strdata = "<tr><td>" .$row['id']. "</td><td>" .$row['idparti']. "</td><td>" .$row['pphase']. "</td><td>" .$row['dend']. "</td><td align='right'><b>" .number_format($row['cust3'],2). "</b></td><td>" .$row['cust5']. "</td></tr>";
 			fwrite($fh, $strdata);
-			$idu = $row[idusr];
-			$tota += $row[cust3];
-			$totb += $row[cust4];
+			$idu = $row['idusr'];
+			$tota += $row['cust3'];
+			$totb += $row['cust4'];
 		}
 		//$strdata = "<tr><td colspan='6' align='right'><b>Total</b></td><td align='right'><b>" . number_format($tota,2) . "</b></td><td></td></tr>";		//total here
 		$strdata = "<tr><td colspan='4' align='right'><b>Total</b></td><td align='right'><b>" . number_format($tota,2) . "</b></td><td></td></tr>";		//total here
@@ -2474,7 +2474,7 @@
 			$retv = "-ok-fn302-" . $trows;
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. "|" .$row[id]. "¦" .$row[type]. "¦" .$row[sku]. "¦" .$row[device]. "¦" .$row[status]. "¦" .$row[assgdelvon]. "¦" .$row[assgeta]. "¦" .$row[idu]. "¦" .$row[idusr]. "¦" .$row[sereta];
+				$retv = $retv. "|" .$row['id']. "¦" .$row['type']. "¦" .$row['sku']. "¦" .$row['device']. "¦" .$row['status']. "¦" .$row['assgdelvon']. "¦" .$row['assgeta']. "¦" .$row['idu']. "¦" .$row['idusr']. "¦" .$row['sereta'];
 			}
 		}
 		else
@@ -2529,7 +2529,7 @@
 			$retv = "-ok-fn303-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[id]. "¦" .$row[type]."¦" .$row[sku]."¦" .$row[serial]. "¦" .$row[device]. "¦"  .$row[status]. "¦" .$row[idu]. "¦"  .$row[idusr]. "¦"  .$row[nameusr]. "¦" .$row[assgstart]. "¦" .$row[assgend]. "¦" .$row[assgeta]. "¦" .$row[assgdelvon]. "¦" .$row[assgdelvmode]. "¦" .$row[reton]. "¦" .$row[retmode]. "¦" .$row[serreason]. "¦" .$row[seron]. "¦" .$row[serby]. "¦" .$row[sereta]. "¦" .$row[serdelvmode]. "¦" .$row[sercount]. "¦" .$row[repon]. "¦" .$row[repdelvmode]. "¦" .$row[discon]. "¦" .$row[discreason]. "¦" .$row[loston]. "¦" .$row[lostrepby]. "¦" .$row[lostrepto]. "¦" .$row[puron]. "¦" .$row[purcost];
+				$retv = $retv. $row['id']. "¦" .$row['type']."¦" .$row['sku']."¦" .$row['serial']. "¦" .$row['device']. "¦"  .$row['status']. "¦" .$row['idu']. "¦"  .$row['idusr']. "¦"  .$row['nameusr']. "¦" .$row['assgstart']. "¦" .$row['assgend']. "¦" .$row['assgeta']. "¦" .$row['assgdelvon']. "¦" .$row['assgdelvmode']. "¦" .$row['reton']. "¦" .$row['retmode']. "¦" .$row['serreason']. "¦" .$row['seron']. "¦" .$row['serby']. "¦" .$row['sereta']. "¦" .$row['serdelvmode']. "¦" .$row['sercount']. "¦" .$row['repon']. "¦" .$row['repdelvmode']. "¦" .$row['discon']. "¦" .$row['discreason']. "¦" .$row['loston']. "¦" .$row['lostrepby']. "¦" .$row['lostrepto']. "¦" .$row['puron']. "¦" .$row['purcost'];
 			}
 		}
 		else
@@ -2640,7 +2640,7 @@
 			$retv = "-ok-fn402-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[answ]. "¦" .$row[nav];
+				$retv = $retv. $row['answ']. "¦" .$row['nav'];
 			}
 		}
 		else
@@ -2662,7 +2662,7 @@
 			$retv = "-ok-fn403-";
 			while ($row = mysql_fetch_array($result))
 			{
-				$retv = $retv. $row[answ]. "¦" .$row[nav];
+				$retv = $retv. $row['answ']. "¦" .$row['nav'];
 			}
 		}
 		else
@@ -2733,10 +2733,10 @@
 	{
 		
 		$database = "zepsom_zeps";
-		$username="zepsom_trksft";
+		$username="root"; //"zepsom_trksft";
 		$password = "tr3ks0ft";
 		
-		@mysql_connect($localhost, $username, $password);
+		@mysql_connect($localhost, $username/*, $password*/);
 		@mysql_query("SET NAMES 'utf8'");
 		@mysql_select_db($database);
 		

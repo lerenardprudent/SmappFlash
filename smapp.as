@@ -1,4 +1,4 @@
-package
+﻿package
 {
 	//import adobe.utils.CustomActions;
 	import flash.display.*;
@@ -59,9 +59,11 @@ package
 		private const _apppath = "";
 		private var _dbpath = "http://treksoft.com/saut/";
 		private var _apppath = "http://treksoft.com/zeps/";
-		*/
 		private var _dbpath = "https://www.zepsom.org/";
 		private var _apppath = "https://www.zepsom.org/";
+		*/
+		private var _dbpath = "http://localhost/smapp/";
+		private var _apppath = "http://localhost/smapp/";
 		
 		private var _appid:String = "ZEPSOM";
 		private var _docid:String = "APPLAY";
